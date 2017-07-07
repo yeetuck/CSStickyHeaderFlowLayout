@@ -13,7 +13,7 @@
         <scene sceneID="2w0-gB-dZZ">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="8Q4-1y-1uB" customClass="CSParallaxHeaderViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="99T-HM-Szu">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" prefetchingEnabled="NO" id="99T-HM-Szu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,6 +94,7 @@
                 <navigationController definesPresentationContext="YES" id="AzM-uQ-2aj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Parallax" id="nlZ-Ur-ZH4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="41L-dZ-XoS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -111,6 +112,7 @@
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="grs-qX-cVg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
@@ -129,7 +131,7 @@
         <scene sceneID="DZy-2H-JvM">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="uLh-Vx-yDh" customClass="CSLockedHeaderViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="1tZ-P9-TcJ">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" prefetchingEnabled="NO" id="1tZ-P9-TcJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -197,6 +199,7 @@
                 <navigationController definesPresentationContext="YES" id="ne4-Ad-gwb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Locked" id="Q73-QR-n9D"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Ba-p3-i4x">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -211,7 +214,7 @@
         <scene sceneID="oPl-lC-Afv">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="JiG-QR-Gdc" customClass="CSGrowHeaderViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="edU-uo-TIO">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" prefetchingEnabled="NO" id="edU-uo-TIO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -279,6 +282,7 @@
                 <navigationController definesPresentationContext="YES" id="EFv-AV-xcM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Grow" id="rpW-Hf-kCP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="5Yf-Rp-qmB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -293,7 +297,7 @@
         <scene sceneID="c5u-NM-LES">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="dcN-xu-3st" customClass="CSStickyParallaxHeaderViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="aog-c6-dPJ">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" indicatorStyle="white" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" prefetchingEnabled="NO" id="aog-c6-dPJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rvp-iv-KS8" customClass="CSStickyHeaderFlowLayout">
