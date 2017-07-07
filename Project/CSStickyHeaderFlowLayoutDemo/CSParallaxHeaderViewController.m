@@ -49,6 +49,7 @@
     [self.collectionView registerNib:self.headerNib
           forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader
                  withReuseIdentifier:@"header"];
+    self.collectionView.prefetchingEnabled = NO;
 
 #ifdef DEBUG_PULL_TO_REFRESH
     self.collectionView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
@@ -119,7 +120,8 @@
         cell.textLabel.text = [[obj allKeys] firstObject];
 
         return cell;
-    } else if ([kind isEqualToString:CSStickyHeaderParallaxHeader]) {
+    }
+    else if ([kind isEqualToString:CSStickyHeaderParallaxHeader]) {
         UICollectionReusableView *cell = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                                             withReuseIdentifier:@"header"
                                                                                    forIndexPath:indexPath];

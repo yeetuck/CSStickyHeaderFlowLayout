@@ -42,6 +42,7 @@
     [self.collectionView registerNib:self.headerNib
           forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader
                  withReuseIdentifier:@"header"];
+    self.collectionView.prefetchingEnabled = NO;
     
     UIBarButtonItem *add = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(add:)];
     self.navigationItem.rightBarButtonItem = add;
