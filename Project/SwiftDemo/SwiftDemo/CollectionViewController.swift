@@ -9,61 +9,86 @@
 import UIKit
 
 class CollectionViewController: UICollectionViewController {
-
-    var items : [String] = ["CSStickyHeaderFlowLayout basic example", "Example to initialize in code", "As well as in Swift", "Please Enjoy"]
-
-    private var layout : CSStickyHeaderFlowLayout? {
+    
+    var items: [String] = ["CSStickyHeaderFlowLayout basic example", "Example to initialize in code", "As well as in Swift", "Please enjoy!", "HaHa!", "Way cool!", "Ok, how is this?", "I like it", "Exciting to watch", "Don't forget to call me"]
+    
+    fileprivate var layout : CSStickyHeaderFlowLayout? {
         return self.collectionView?.collectionViewLayout as? CSStickyHeaderFlowLayout
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.collectionView?.alwaysBounceVertical = true
-        self.view.backgroundColor = UIColor.whiteColor()
-
+        self.collectionView?.backgroundColor = UIColor.white
+        
+        // This property is available in iOS 10. Disable dynamic position of `SupplementaryView` to avoid crash / exception.
+        /** Obj-C
+        if ([self.collectionView respondsToSelector:@selector(setPrefetchingEnabled:)]) {
+            self.collectionView.prefetchingEnabled = false;
+        }
+        **/
+        // Swift 3
+        if #available(iOS 10, *) {
+            collectionView?.isPrefetchingEnabled = false  //default is true
+        }
+        
         // Setup Cell
-        self.collectionView?.registerClass(CollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        self.layout?.itemSize = CGSizeMake(self.view.frame.size.width, 44)
+        self.collectionView?.register(CollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        let insetLeft: CGFloat = 10.0
+        let insetRight: CGFloat = 10.0
+        let insetTop: CGFloat = 2.0
+        let insetBottom: CGFloat = 2.0
+        self.layout?.sectionInset = UIEdgeInsetsMake(insetTop, insetLeft, insetBottom, insetRight)
+        self.layout?.itemSize = CGSize(width: self.view.frame.size.width - insetLeft - insetRight, height: 44.0)
 
-        // Setup Header
-        self.collectionView?.registerClass(CollectionParallaxHeader.self, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "parallaxHeader")
-        self.layout?.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 100)
-
+        // Setup Parallax Header (Suppliementary View)
+        self.collectionView?.register(CollectionParallaxHeader.self, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "parallaxHeader")
+        self.layout?.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 300.0)
+        
         // Setup Section Header
-        self.collectionView?.registerClass(CollectionViewSectionHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "sectionHeader")
-        self.layout?.headerReferenceSize = CGSizeMake(320, 40)
+        self.collectionView?.register(CollectionViewSectionHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "sectionHeader")
+        self.layout?.headerReferenceSize = CGSize(width: self.view.frame.size.width, height: 40.0)
     }
-
-    // Cells
-
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    
+    //MARK: UICollectionViewDataSource
+    
+    // Cell
+    
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 4
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.items.count
     }
-
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.text = self.items[indexPath.row]
         return cell
     }
-
+    
     // Parallax Header
-
-    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
         if kind == CSStickyHeaderParallaxHeader {
-            let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "parallaxHeader", forIndexPath: indexPath)
-            return view
-        } else if kind == UICollectionElementKindSectionHeader {
-            let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "sectionHeader", forIndexPath: indexPath)
-            view.backgroundColor = UIColor.lightGrayColor()
+            let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "parallaxHeader", for: indexPath)
             return view
         }
-
+        else if kind == UICollectionElementKindSectionHeader {
+            let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "sectionHeader", for: indexPath)
+            view.backgroundColor = UIColor.lightGray
+            return view
+        }
         return UICollectionReusableView()
-
     }
-
+    
+    /** not doing anything
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10.0, left: 1.0, bottom: 1.0, right: 1.0)
+    }
+    **/
 }
 

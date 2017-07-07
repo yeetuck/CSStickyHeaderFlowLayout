@@ -40,12 +40,12 @@
 		1AFE097F187D677000CA880A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AFE097D187D677000CA880A /* InfoPlist.strings */; };
 		1AFE0981187D677000CA880A /* CSStickyHeaderFlowLayoutDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE0980187D677000CA880A /* CSStickyHeaderFlowLayoutDemoTests.m */; };
 		1AFE0992187D688300CA880A /* CSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE0991187D688300CA880A /* CSCell.m */; };
+		9DB7C471A850EA0BB817128E /* libPods-CSStickyHeaderFlowLayoutDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8C5675DAB04A7D7B44A98A /* libPods-CSStickyHeaderFlowLayoutDemo.a */; };
 		AF1D0D491D63203300F9FA68 /* CSStickyHeaderFlowLayoutCarthage.h in Headers */ = {isa = PBXBuildFile; fileRef = AF1D0D481D63203300F9FA68 /* CSStickyHeaderFlowLayoutCarthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF1D0D4E1D6320A800F9FA68 /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B2F761B56C5A6007F67CC /* CSStickyHeaderFlowLayout.m */; };
 		AF1D0D4F1D6320A800F9FA68 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B2F781B56C5A6007F67CC /* CSStickyHeaderFlowLayoutAttributes.m */; };
 		AF1D0D501D6320B100F9FA68 /* CSStickyHeaderFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4B2F751B56C5A6007F67CC /* CSStickyHeaderFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF1D0D511D6320B100F9FA68 /* CSStickyHeaderFlowLayoutAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4B2F771B56C5A6007F67CC /* CSStickyHeaderFlowLayoutAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B36BC395070946668DCF2AFF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 491370024AF54DD8BFB773DA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0465687C47EFB6C163A91D17 /* Pods-CSStickyHeaderFlowLayoutDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSStickyHeaderFlowLayoutDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSStickyHeaderFlowLayoutDemo/Pods-CSStickyHeaderFlowLayoutDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		1A0117F218AD036800AC836F /* CSGrowHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGrowHeaderViewController.h; sourceTree = "<group>"; };
 		1A0117F318AD036800AC836F /* CSGrowHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSGrowHeaderViewController.m; sourceTree = "<group>"; };
 		1A0117F518AD037D00AC836F /* CSGrowHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSGrowHeader.xib; sourceTree = "<group>"; };
@@ -134,14 +135,11 @@
 		1AFE0980187D677000CA880A /* CSStickyHeaderFlowLayoutDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayoutDemoTests.m; sourceTree = "<group>"; };
 		1AFE0990187D688300CA880A /* CSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCell.h; sourceTree = "<group>"; };
 		1AFE0991187D688300CA880A /* CSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCell.m; sourceTree = "<group>"; };
-		229ECB0968A8A873A6AEB59D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		491370024AF54DD8BFB773DA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		58D371C1C7F562AB1D536637 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		6BDE4094D41E4DE6515DF055 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		AD97E1BDF2B20F6336CBF8D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		207498B46B45EA8D40BE998B /* Pods-CSStickyHeaderFlowLayoutDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSStickyHeaderFlowLayoutDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSStickyHeaderFlowLayoutDemo/Pods-CSStickyHeaderFlowLayoutDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AF1D0D461D63203300F9FA68 /* CSStickyHeaderFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSStickyHeaderFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1D0D481D63203300F9FA68 /* CSStickyHeaderFlowLayoutCarthage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayoutCarthage.h; sourceTree = "<group>"; };
 		AF1D0D4A1D63203300F9FA68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8C5675DAB04A7D7B44A98A /* libPods-CSStickyHeaderFlowLayoutDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CSStickyHeaderFlowLayoutDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +166,7 @@
 				1AFE0958187D677000CA880A /* CoreGraphics.framework in Frameworks */,
 				1AFE095A187D677000CA880A /* UIKit.framework in Frameworks */,
 				1AFE0956187D677000CA880A /* Foundation.framework in Frameworks */,
-				B36BC395070946668DCF2AFF /* libPods.a in Frameworks */,
+				9DB7C471A850EA0BB817128E /* libPods-CSStickyHeaderFlowLayoutDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,16 +190,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		034852391EBFCBDC0011D58A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6BDE4094D41E4DE6515DF055 /* Pods.debug.xcconfig */,
-				AD97E1BDF2B20F6336CBF8D7 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		1A4B2F561B56C539007F67CC /* CSStickyHeaderFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,7 +237,7 @@
 				AF1D0D471D63203300F9FA68 /* CSStickyHeaderFlowLayoutCarthage */,
 				1AFE0954187D677000CA880A /* Frameworks */,
 				1AFE0953187D677000CA880A /* Products */,
-				9DDE38A70ED787DEBF9A6411 /* Pods */,
+				568EE6D444E51CB0DF3C0B4F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -273,7 +261,7 @@
 				1AFE0957187D677000CA880A /* CoreGraphics.framework */,
 				1AFE0959187D677000CA880A /* UIKit.framework */,
 				1AFE0974187D677000CA880A /* XCTest.framework */,
-				491370024AF54DD8BFB773DA /* libPods.a */,
+				CC8C5675DAB04A7D7B44A98A /* libPods-CSStickyHeaderFlowLayoutDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -347,7 +335,6 @@
 				1A0BCA1F1A80B25D005D9F7C /* CSSectionHeader.h */,
 				1A0BCA201A80B25D005D9F7C /* CSSectionHeader.m */,
 				1A18AE5618F1947B003DC8CF /* CSAlwaysOnTopHeader.h */,
-				034852391EBFCBDC0011D58A /* Pods */,
 				1A18AE5718F1947B003DC8CF /* CSAlwaysOnTopHeader.m */,
 				1AC0D88418AA38380072B3F1 /* CSParallaxHeader.xib */,
 				1AC0D88818AA3AF80072B3F1 /* CSSearchBarHeader.xib */,
@@ -357,11 +344,11 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
-		9DDE38A70ED787DEBF9A6411 /* Pods */ = {
+		568EE6D444E51CB0DF3C0B4F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				58D371C1C7F562AB1D536637 /* Pods.debug.xcconfig */,
-				229ECB0968A8A873A6AEB59D /* Pods.release.xcconfig */,
+				0465687C47EFB6C163A91D17 /* Pods-CSStickyHeaderFlowLayoutDemo.debug.xcconfig */,
+				207498B46B45EA8D40BE998B /* Pods-CSStickyHeaderFlowLayoutDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -441,12 +428,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AFE0984187D677000CA880A /* Build configuration list for PBXNativeTarget "CSStickyHeaderFlowLayoutDemo" */;
 			buildPhases = (
-				5D2E1DC23FE5404B8BEA4738 /* Check Pods Manifest.lock */,
+				CEC3EBF3005B3F6AF7E99B93 /* [CP] Check Pods Manifest.lock */,
 				1AFE094E187D677000CA880A /* Sources */,
 				1AFE094F187D677000CA880A /* Frameworks */,
 				1AFE0950187D677000CA880A /* Resources */,
-				D421C3C38E994F76AF2EBD05 /* Copy Pods Resources */,
 				1A4B2F6D1B56C539007F67CC /* Embed Frameworks */,
+				57C4316AAE823879B4B13A36 /* [CP] Embed Pods Frameworks */,
+				305B8FFFC232FC6ADA6CF8E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -588,34 +576,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5D2E1DC23FE5404B8BEA4738 /* Check Pods Manifest.lock */ = {
+		305B8FFFC232FC6ADA6CF8E4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSStickyHeaderFlowLayoutDemo/Pods-CSStickyHeaderFlowLayoutDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D421C3C38E994F76AF2EBD05 /* Copy Pods Resources */ = {
+		57C4316AAE823879B4B13A36 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSStickyHeaderFlowLayoutDemo/Pods-CSStickyHeaderFlowLayoutDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEC3EBF3005B3F6AF7E99B93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -902,7 +905,7 @@
 		};
 		1AFE0985187D677000CA880A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58D371C1C7F562AB1D536637 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0465687C47EFB6C163A91D17 /* Pods-CSStickyHeaderFlowLayoutDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -918,7 +921,7 @@
 		};
 		1AFE0986187D677000CA880A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 229ECB0968A8A873A6AEB59D /* Pods.release.xcconfig */;
+			baseConfigurationReference = 207498B46B45EA8D40BE998B /* Pods-CSStickyHeaderFlowLayoutDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

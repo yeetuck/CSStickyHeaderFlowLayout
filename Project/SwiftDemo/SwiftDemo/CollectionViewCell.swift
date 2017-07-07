@@ -9,35 +9,35 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-
-    var text : String? {
+    
+    var text: String? {
         didSet {
             self.reloadData()
         }
     }
-
-    private var textLabel : UILabel?
-
+    
+    fileprivate var textLabel: UILabel?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-
-        self.backgroundColor = UIColor.whiteColor()
         
-        let bounds = CGRectMake(0, 0, CGRectGetMaxX(frame), CGRectGetMaxY(frame))
+        self.backgroundColor = UIColor.white
+        
+        let bounds = CGRect(x: 0.0, y: 0.0, width: frame.maxX, height: frame.maxY)
         let label = UILabel(frame: bounds)
-        label.autoresizingMask = [UIViewAutoresizing.FlexibleHeight, UIViewAutoresizing.FlexibleWidth]
+        label.autoresizingMask = [UIViewAutoresizing.flexibleHeight, UIViewAutoresizing.flexibleWidth]
         self.textLabel = label
         self.addSubview(label)
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-
+    
     func reloadData() {
         self.textLabel?.text = self.text
     }
-
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         self.textLabel?.frame = self.bounds
